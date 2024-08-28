@@ -10,9 +10,12 @@ pip install -r requirements.txt
 ```
 * Запуск
 ```bash
-pytest tests/ 
+pytest tests/ --alluredir=allure_results 
 ```
-
+* Формирование отчета
+```bash
+allure generate allure_results -o allure_report
+```
 * Просмотр отчета по тестированию
 ```bash
 allure open allure_report
